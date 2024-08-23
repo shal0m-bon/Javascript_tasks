@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Weight = 20;
+        let height = 200;
+        let Wkg = Weight * 2.54;
+        let Hcm = height / 2.046;
+        let Hm = Hcm / 100;
+        console.log("The height,", height, "inches =", Hcm, "cm", "and is", Hm, "m");
+        console.log("The weight,,", Weight, "pounds =", Wkg, "kg");
+
+        let BMI = Wkg / (Hm*Hm);
+        console.log("The BMI is:", BMI);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter an number: </label>
+    <input type="number" name="number" id="num">
+    <button type="button" onclick="EvenOdd()">Answer</button><br>
+    <p><span id="val"> </span></p>
+
+    <script>
+        function EvenOdd(){
+            var valEven = document.getElementById('val');
+            var valOdd = document.getElementById('val');
+           let numb = document.getElementById('num').value;
+            if(numb % 2 === 0){
+                let valEven = "Even";
+                var ans = document.getElementById('val');
+                ans.textContent = valEven;
+            }
+            else{
+                let valOdd = "Odd";
+                var ans = document.getElementById('val');
+                ans.textContent = valOdd;
+            }
+        }
+    </script>
+</body>
+</html>

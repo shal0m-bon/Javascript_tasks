@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square root calculator</title>
+</head>
+<body>
+    <label for="N">Enter number</label>
+    <input type="number" name="number" id="N">
+    <button type="button" onclick="squareRoot()">Equals</button> 
+    <p > Square root = <span id="sqrt"></span></p>
+    <script> 
+    function squareRoot(){
+        let num = document.getElementById('N').value;
+        let root = Math.sqrt(num);
+        let answer = document.getElementById('sqrt');
+        answer.textContent = root;
+    }
+    
+    </script>
+    
+</body>
+</html>
